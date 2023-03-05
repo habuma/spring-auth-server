@@ -67,6 +67,7 @@ public class AuthServerConfig {
         .redirectUri("http://127.0.0.1:8080/authorized")
         .scope(OidcScopes.PROFILE)
         .scope("data.read")
+        .scope("data.write")
         .clientSettings(ClientSettings.builder().requireAuthorizationConsent(true).build())
         .build();
 
